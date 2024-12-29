@@ -134,7 +134,7 @@ const Home = () => {
         </div>
 
         {/* Auto-Slider Section */}
-        <div className="relative w-11/12 max-w-[1228.8px] h-auto max-h-[736.32px] overflow-hidden  rounded-[19.2px] border-[9.6px] border-opacity-[48%] gap-[9.6px]">
+        <div className="relative w-11/12 hidden md:block max-w-[1228.8px] h-auto max-h-[736.32px] overflow-hidden  rounded-[19.2px] border-[9.6px] border-opacity-[48%] gap-[9.6px]">
           {/* Current Image */}
           <Image
             src={images[currentIndex].src}
