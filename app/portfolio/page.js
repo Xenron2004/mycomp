@@ -7,10 +7,14 @@ import SlideCard from "./SlideCard";
 
 const Portfolio = () => {
   const images = [
+     "/assets/portfolio/Thumbnail_Travrip.jpg",
     "/assets/portfolio/Mockups_Fastpay.jpg",
+     "/assets/portfolio/Thumbnail_Travrip.jpg",
     "/assets/portfolio/Thumbnail_Payswift.png",
+     "/assets/portfolio/Thumbnail_Travrip.jpg",
     "/assets/portfolio/Thumbnail_Travrip.jpg",
-    "/assets/portfolio/Thumbnail_Fastpay.jpg",
+     "/assets/portfolio/Thumbnail_Travrip.jpg", "/assets/portfolio/Thumbnail_Travrip.jpg",
+    
   ];
 
   return (
