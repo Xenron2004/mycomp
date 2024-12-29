@@ -2,20 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+body, html {
+  overflow: visible;
+  height: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/fonts/InterDisplay-Light.ttf') format('truetype');
+  font-weight: 300; /* Light */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/fonts/InterDisplay-Regular.ttf') format('truetype');
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/fonts/InterDisplay-Medium.ttf') format('truetype');
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/fonts/InterDisplay-semiBold.ttf') format('truetype');
+  font-weight: 600; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/fonts/InterDisplay-Bold.ttf') format('truetype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'InterDisplay';
+  src: url('/fonts/InterDisplay-ExtraBold.ttf') format('truetype');
+  font-weight: 800; /* Extra Bold */
+  font-style: normal;
+}
+
+
+@layer utilities {
+  .after-line {
+    position: relative;
+  }
+  .after-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+  .after-line:hover::after {
+    width: 100%;
+    left: 0;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+
+
+
+
+
+
+
+/* globals.css */
+
+/* Slide Right Animation */
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Slide Left Animation */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* Custom Classes for Animations */
+.animate-slideRight {
+  animation: slideRight 10s linear infinite;
+}
+
+.animate-slideLeft {
+  animation: slideLeft 10s linear infinite;
 }
