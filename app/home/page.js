@@ -110,7 +110,7 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="font-medium hidden md:block items-center font-inter text-start md:text-center max-w-[950px] tracking-[-2%] leading-[31.2px] w-11/12  text-[20px] text-[#7A7F8A] ">
+          <div className="font-medium  items-center font-inter text-start md:text-center max-w-[950px] tracking-[-2%] leading-[31.2px] w-11/12 text-[18px]  md:text-[20px] text-[#7A7F8A] ">
             We deliver innovative digital solutions, specializing in{" "}
             <span className="text-white ">
               {" "}
