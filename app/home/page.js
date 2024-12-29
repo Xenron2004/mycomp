@@ -67,7 +67,7 @@ const Home = () => {
           </div>
 
           {/* services links */}
-          <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-start mx-auto gap-4">
+          <div className="hidden md:grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 items-start mx-auto gap-4">
             <div className="flex gap-[10px] items-center justify-start">
               <div className="w-3 h-3 rounded-full bg-primary"></div>
               <div className="text-white font-inter font-medium text-[18px]">
