@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Travrip from "../../public/assets/portfolio/Thumbnail_Travrip.jpg";
 import Payswift from "../../public/assets/portfolio/Thumbnail_Payswift.png";
-import Fastpay from "../../public/assets/portfolio/Thumbnail_Fastpay.jpg";
+
 import Mockups from "../../public/assets/portfolio/mockups.png";
 import FastpayVersion from "../../public/assets/portfolio/Three_versions_Fastpay.jpg";
 import Projects from "@/components/Projects";
@@ -24,10 +24,7 @@ const Home = () => {
       alt: "Slider Image 1",
     },
 
-    {
-      src: Fastpay,
-      alt: "Slider Image 1",
-    },
+  
     {
       src: Payswift,
       alt: "Slider Image 2",
